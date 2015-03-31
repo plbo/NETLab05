@@ -19,7 +19,7 @@
 
 		public bool Passed
 		{
-			get { return Grade > 2; }
+			get { return Grade.HasValue && Grade.Value > 2; }
 		}
 	}
 }
